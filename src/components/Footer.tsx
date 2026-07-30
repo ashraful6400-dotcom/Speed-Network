@@ -154,7 +154,7 @@ export default function Footer() {
           <div>
             <p>&copy; {currentYear} SpeedNetworkBD. All rights reserved.</p>
             <p className="mt-1">
-              Design & Development by <a href="https://wa.me/8801713727968" target="_blank" rel="noopener noreferrer" className="text-brand-cyan hover:underline font-semibold">Ashraful (WhatsApp: +8801713727968)</a>
+              Design & Development by <a href="https://wa.me/8801713727968" target="_blank" rel="noopener noreferrer" className="text-brand-cyan hover:underline font-semibold">Ashraful</a>
             </p>
           </div>
           <div className="flex space-x-4">
