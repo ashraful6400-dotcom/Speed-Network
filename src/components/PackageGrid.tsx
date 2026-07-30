@@ -17,12 +17,14 @@ export interface Package {
 }
 
 const defaultPackages: Package[] = [
+  { id: 'p20', name: 'Lite Connect', speed: 20, price: 400, unlimited: true, support: '24/7 Standard Support', popular: false },
   { id: 'p30', name: 'Starter Pack', speed: 30, price: 500, unlimited: true, support: '24/7 Standard Support', popular: false },
   { id: 'p50', name: 'Standard Fiber', speed: 50, price: 800, unlimited: true, support: '24/7 Standard Support', popular: false },
   { id: 'p80', name: 'Popular Speed', speed: 80, price: 1000, unlimited: true, support: '24/7 Dedicated Support', popular: true },
   { id: 'p100', name: 'Turbo Connect', speed: 100, price: 1200, unlimited: true, support: '24/7 Premium Support + Public IP', popular: false },
   { id: 'p150', name: 'Ultra Stream', speed: 150, price: 1800, unlimited: true, support: '24/7 Premium Support + Public IP', popular: false },
   { id: 'p200', name: 'Hyper Gamer', speed: 200, price: 2300, unlimited: true, support: '24/7 Dedicated Manager + SLA', popular: false },
+  { id: 'p300', name: 'Extreme Core', speed: 300, price: 3500, unlimited: true, support: '24/7 Dedicated Manager + SLA + Static IP', popular: false },
 ];
 
 interface PackageGridProps {

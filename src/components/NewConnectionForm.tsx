@@ -53,18 +53,27 @@ export default function NewConnectionForm({
     if (!validate()) return;
 
     setIsSubmitting(true);
-    // Simulate submission
+    // Open WhatsApp and Email
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
       
+      const message = `New Connection Request:\nName: ${formData.name}\nPhone: ${formData.phone}\nArea: ${formData.area}\nAddress: ${formData.address}\nPackage: ${formData.package}`;
+      const waUrl = `https://wa.me/8801743226802?text=${encodeURIComponent(message)}`;
+      const mailUrl = `mailto:speednetwork72@gmail.com?subject=New Connection Request&body=${encodeURIComponent(message)}`;
+      
+      // Open WhatsApp in new tab
+      window.open(waUrl, '_blank');
+      // Trigger email client
+      window.location.href = mailUrl;
+
       // Fire confetti celebration
       confetti({
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 }
       });
-    }, 1800);
+    }, 600);
   };
 
   const areas = [
@@ -77,12 +86,14 @@ export default function NewConnectionForm({
   ];
 
   const packages = [
+    { id: 'p20', label: 'Lite Connect (20 Mbps) - ৳400/mo' },
     { id: 'p30', label: 'Starter Pack (30 Mbps) - ৳500/mo' },
     { id: 'p50', label: 'Standard Fiber (50 Mbps) - ৳800/mo' },
     { id: 'p80', label: 'Popular Speed (80 Mbps) - ৳1000/mo' },
     { id: 'p100', label: 'Turbo Connect (100 Mbps) - ৳1200/mo' },
     { id: 'p150', label: 'Ultra Stream (150 Mbps) - ৳1800/mo' },
     { id: 'p200', label: 'Hyper Gamer (200 Mbps) - ৳2300/mo' },
+    { id: 'p300', label: 'Extreme Core (300 Mbps) - ৳3500/mo' },
   ];
 
   if (isSubmitted) {

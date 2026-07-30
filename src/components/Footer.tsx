@@ -49,12 +49,7 @@ export default function Footer() {
           {/* Column 1: Brand & Socials */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="relative flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-blue to-brand-cyan text-white shadow-[0_0_10px_rgba(0,240,255,0.4)]">
-                <Zap className="w-5 h-5 stroke-[2.5]" />
-              </div>
-              <span className="text-lg font-black tracking-wider text-brand-text-light dark:text-brand-text-dark">
-                SPEED<span className="text-brand-cyan">NETWORK</span>BD
-              </span>
+              <img src="/logo.png" alt="SpeedNetworkBD Logo" className="h-10 w-auto object-contain" />
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed max-w-sm">
               SpeedNetworkBD is Bangladesh\'s leading premium optical fiber broadband provider, rendering stable, latency-optimized, and high-performance internet solutions for homes and enterprise networks.
@@ -156,7 +151,12 @@ export default function Footer() {
 
         {/* Footer Legal Details */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 text-xs text-gray-400 space-y-4 sm:space-y-0">
-          <p>&copy; {currentYear} SpeedNetworkBD. All rights reserved.</p>
+          <div>
+            <p>&copy; {currentYear} SpeedNetworkBD. All rights reserved.</p>
+            <p className="mt-1">
+              Design & Development by <a href="https://wa.me/8801713727968" target="_blank" rel="noopener noreferrer" className="text-brand-cyan hover:underline font-semibold">Ashraful (WhatsApp: +8801713727968)</a>
+            </p>
+          </div>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-brand-cyan transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-brand-cyan transition-colors">Terms of Service</a>

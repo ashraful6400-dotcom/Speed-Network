@@ -66,12 +66,7 @@ export default function Navbar({ onOpenSpeedTest, activeSection }: NavbarProps) 
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-tr from-brand-blue to-brand-cyan text-white shadow-[0_0_15px_rgba(0,240,255,0.4)] animate-pulse-glow">
-              <Zap className="w-6 h-6 stroke-[2.5]" />
-            </div>
-            <span className="text-xl font-black tracking-wider text-brand-text-light dark:text-brand-text-dark">
-              SPEED<span className="text-brand-cyan bg-clip-text">NETWORK</span>BD
-            </span>
+            <img src="/logo.png" alt="SpeedNetworkBD Logo" className="h-10 w-auto object-contain" />
           </div>
 
           {/* Desktop Nav */}

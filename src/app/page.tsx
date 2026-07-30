@@ -168,12 +168,17 @@ export default function Home() {
                 <h3 className="text-2xl sm:text-3xl font-black text-brand-text-light dark:text-white mb-3">
                   Get Connected in Natore & Gurudaspur
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-2">
+                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
                   We currently serve <strong className="text-brand-cyan">Natore</strong> and <strong className="text-brand-cyan">Gurudaspur</strong> with our premium fiber broadband network. Contact us to check availability at your location.
                 </p>
-                <p className="text-xs text-gray-400 mb-6">
-                  📍 Office: Halsa Bazar, Natore &nbsp;|&nbsp; CEO: Md. Rashidul Islam
-                </p>
+                <div className="flex items-center space-x-4 mb-8 p-4 rounded-2xl bg-white/50 dark:bg-brand-deep/50 border border-brand-cyan/20">
+                  <img src="/ceo.jpg" alt="CEO Md. Rashidul Islam" className="w-14 h-14 rounded-full object-cover border-2 border-brand-cyan shadow-md" />
+                  <div>
+                    <h4 className="font-bold text-brand-text-light dark:text-white">Md. Rashidul Islam</h4>
+                    <p className="text-xs text-brand-cyan mb-1">CEO & Founder</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">📍 Office: Halsa Bazar, Natore</p>
+                  </div>
+                </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="tel:+8801743226802"
