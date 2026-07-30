@@ -172,7 +172,7 @@ export default function Home() {
                   We currently serve <strong className="text-brand-cyan">Natore</strong> and <strong className="text-brand-cyan">Gurudaspur</strong> with our premium fiber broadband network. Contact us to check availability at your location.
                 </p>
                 <div className="flex items-center space-x-4 mb-8 p-4 rounded-2xl bg-white/50 dark:bg-brand-deep/50 border border-brand-cyan/20">
-                  <img src="/ceo.jpg" alt="CEO Md. Rashidul Islam" className="w-14 h-14 rounded-full object-cover border-2 border-brand-cyan shadow-md" />
+                  <img src="/ceo.png" alt="CEO Md. Rashidul Islam" className="w-14 h-14 rounded-full object-cover border-2 border-brand-cyan shadow-md" />
                   <div>
                     <h4 className="font-bold text-brand-text-light dark:text-white">Md. Rashidul Islam</h4>
                     <p className="text-xs text-brand-cyan mb-1">CEO & Founder</p>
