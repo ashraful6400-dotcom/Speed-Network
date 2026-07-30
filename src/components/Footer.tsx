@@ -49,7 +49,7 @@ export default function Footer() {
           {/* Column 1: Brand & Socials */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center space-x-2">
-              <img src="/logo.png" alt="SpeedNetworkBD Logo" className="h-10 w-auto object-contain" />
+              <img src="/logo.png" alt="SpeedNetworkBD Logo" className="h-20 w-auto object-contain" />
             </div>
             <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed max-w-sm">
               SpeedNetworkBD is Bangladesh\'s leading premium optical fiber broadband provider, rendering stable, latency-optimized, and high-performance internet solutions for homes and enterprise networks.
