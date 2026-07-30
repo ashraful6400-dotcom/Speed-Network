@@ -7,7 +7,6 @@ import PackageGrid, { Package } from '../components/PackageGrid';
 import InteractiveMap from '../components/InteractiveMap';
 import NewConnectionForm from '../components/NewConnectionForm';
 import BillingPortal from '../components/BillingPortal';
-import FAQSection from '../components/FAQSection';
 import ContactSection from '../components/ContactSection';
 import FloatingActions from '../components/FloatingActions';
 import Footer from '../components/Footer';
@@ -41,7 +40,7 @@ export default function Home() {
 
   // Intersection Observer for scroll highlighting in Navbar
   useEffect(() => {
-    const sections = ['home', 'packages', 'coverage', 'new-connection', 'payment', 'support', 'faq', 'contact'];
+    const sections = ['home', 'packages', 'coverage', 'new-connection', 'payment', 'support', 'contact'];
     
     const observerOptions = {
       root: null,
@@ -158,23 +157,6 @@ export default function Home() {
         {/* Section 6: Support Quick Actions */}
         <section id="support" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
           <ContactSection />
-        </section>
-
-        {/* Section 8: FAQ */}
-        <section id="faq" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-20">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 text-xs font-bold text-brand-cyan uppercase tracking-wider">
-              <HelpCircle className="w-3.5 h-3.5" />
-              <span>Common Questions</span>
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black text-brand-text-light dark:text-white tracking-tight">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-sm md:text-base text-gray-500 dark:text-gray-400">
-              Clear answers to common queries regarding optical layout, router configurations, BDIX peering nodes, and contract periods.
-            </p>
-          </div>
-          <FAQSection />
         </section>
 
         {/* Section 9: Contact */}

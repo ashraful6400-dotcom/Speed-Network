@@ -33,7 +33,6 @@ export default function Navbar({ onOpenSpeedTest, activeSection }: NavbarProps) 
     { name: 'New Connection', href: '#new-connection' },
     { name: 'Payment', href: '#payment' },
     { name: 'Support', href: '#support' },
-    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];
 
