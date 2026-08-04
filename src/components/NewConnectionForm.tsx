@@ -11,7 +11,7 @@ interface NewConnectionFormProps {
 }
 
 export default function NewConnectionForm({
-  preselectedPackageId = 'p80',
+  preselectedPackageId = 'sprint',
   preselectedPackageSpeed = 80,
 }: NewConnectionFormProps) {
   const [formData, setFormData] = useState({
@@ -86,14 +86,16 @@ export default function NewConnectionForm({
   ];
 
   const packages = [
-    { id: 'p20', label: 'Lite Connect (20 Mbps) - ৳400/mo' },
-    { id: 'p30', label: 'Starter Pack (30 Mbps) - ৳500/mo' },
-    { id: 'p50', label: 'Standard Fiber (50 Mbps) - ৳800/mo' },
-    { id: 'p80', label: 'Popular Speed (80 Mbps) - ৳1000/mo' },
-    { id: 'p100', label: 'Turbo Connect (100 Mbps) - ৳1200/mo' },
-    { id: 'p150', label: 'Ultra Stream (150 Mbps) - ৳1800/mo' },
-    { id: 'p200', label: 'Hyper Gamer (200 Mbps) - ৳2300/mo' },
-    { id: 'p300', label: 'Extreme Core (300 Mbps) - ৳3500/mo' },
+    { id: 'step', label: 'STEP (22 Mbps) - ৳500/mo' },
+    { id: 'march', label: 'MARCH (26 Mbps) - ৳525/mo' },
+    { id: 'trot', label: 'TROT (35 Mbps) - ৳600/mo' },
+    { id: 'jog', label: 'JOG (45 Mbps) - ৳700/mo' },
+    { id: 'run', label: 'RUN (55 Mbps) - ৳800/mo' },
+    { id: 'sprint', label: 'SPRINT (80 Mbps) - ৳1050/mo' },
+    { id: 'gallop', label: 'GALLOP (110 Mbps) - ৳1400/mo' },
+    { id: 'soar', label: 'SOAR (150 Mbps) - ৳2250/mo' },
+    { id: 'rocket', label: 'ROCKET (200 Mbps) - ৳3000/mo' },
+    { id: 'lead', label: 'LEAD (300 Mbps) - ৳6000/mo' },
   ];
 
   if (isSubmitted) {
@@ -122,7 +124,7 @@ export default function NewConnectionForm({
           <button
             onClick={() => {
               setIsSubmitted(false);
-              setFormData({ name: '', phone: '', address: '', area: 'natore-sadar', package: 'p80' });
+              setFormData({ name: '', phone: '', address: '', area: 'natore-sadar', package: 'sprint' });
             }}
             className="px-6 py-2.5 rounded-xl border border-brand-cyan/30 text-brand-cyan hover:bg-brand-cyan/10 font-bold transition-all cursor-pointer"
           >
